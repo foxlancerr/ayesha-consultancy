@@ -13,8 +13,8 @@ export function Location() {
         />
         <div className="grid gap-8 md:grid-cols-3">
           {[
-            { city: "Islamabad", detail: "[ADDRESS]", phone: "[PHONE NUMBER]", icon: "📍", color: "bg-[#F1F5F9] text-[#0F172A]" },
-            { city: "Peshawar", detail: "[ADDRESS]", phone: "[PHONE NUMBER]", icon: "📍", color: "bg-[#EFF6FF] text-[#1D4ED8]" },
+            { city: "Islamabad", detail: "[ADDRESS]", phone: "923186652528", icon: "📍", color: "bg-[#F1F5F9] text-[#0F172A]" },
+            { city: "Peshawar", detail: "[ADDRESS]", phone: "923186652528", icon: "📍", color: "bg-[#EFF6FF] text-[#1D4ED8]" },
             { city: "Nationwide Remote", detail: "Video call, phone & WhatsApp", phone: "All of Pakistan", icon: "🌐", color: "bg-[#F0FDF4] text-[#15803D]" },
           ].map((loc, i) => (
             <div key={i} className="rounded-xl border border-[#E2E8F0] bg-white p-8 shadow-sm">

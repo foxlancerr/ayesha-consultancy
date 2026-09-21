@@ -8,7 +8,7 @@ import { Footer } from "@/components/layout/footer";
 import { WhatsAppCTA } from "@/components/layout/whatsapp-cta";
 
 export const metadata = {
-  title: "Our Services | Tax Consultant Islamabad & Peshawar",
+  title: "Our Services | Ayesha Consultancy Islamabad & Peshawar",
   description: "Comprehensive tax services including income tax filing, FBR compliance, wealth statement, and tax planning. Serving Islamabad, Peshawar, and all of Pakistan.",
 };
 

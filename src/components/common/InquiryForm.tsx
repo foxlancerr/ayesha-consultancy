@@ -99,7 +99,7 @@ export function InquiryForm() {
           <Input
             id="phone"
             type="tel"
-            placeholder="+92XXXXXXXXXX"
+            placeholder="+923186652528"
             className={cn(errors.phone && "border-red-500 focus:border-red-500 focus:ring-red-500")}
             {...register("phone")}
           />

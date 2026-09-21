@@ -5,7 +5,7 @@ import { Footer } from "@/components/layout/footer";
 import { WhatsAppCTA } from "@/components/layout/whatsapp-cta";
 
 export const metadata = {
-  title: "Documents Required | Tax Consultant Pakistan",
+  title: "Documents Required | Ayesha Consultancy Pakistan",
   description: "Find out what documents you may need for tax filing. Requirements vary by case. Final requirements confirmed by the consultant.",
 };
 

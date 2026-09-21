@@ -2,7 +2,7 @@ import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 
 export const metadata = {
-  title: "Disclaimer | Tax Consultant Pakistan",
+  title: "Disclaimer | Ayesha Consultancy Pakistan",
   description: "Read our disclaimer. All information provided is for general guidance only.",
 };
 
@@ -23,7 +23,7 @@ export default function DisclaimerPage() {
               <p className="text-[#475569]">
                 The information provided on this website is for general informational purposes 
                 only. All information is provided on an "as-is" basis without any representations 
-                or warranties, express or implied. [CONSULTANT NAME] does not warrant the accuracy, 
+                or warranties, express or implied. Ayesha does not warrant the accuracy, 
                 completeness, or timeliness of the information on this website.
               </p>
             </section>
@@ -38,7 +38,7 @@ export default function DisclaimerPage() {
             <section>
               <h2 className="mb-2 text-xl font-semibold text-[#1B2A4A]">3. Liability Limitation</h2>
               <p className="text-[#475569]">
-                In no event shall [CONSULTANT NAME] be liable for any indirect, incidental, special, 
+                In no event shall Ayesha be liable for any indirect, incidental, special, 
                 consequential, or punitive damages, including but not limited to loss of profits, data, 
                 or use, arising out of or related to the use of this website.
               </p>
@@ -47,14 +47,14 @@ export default function DisclaimerPage() {
               <h2 className="mb-2 text-xl font-semibold text-[#1B2A4A]">4. External Links</h2>
               <p className="text-[#475569]">
                 Our website may contain links to third-party websites that are not owned or controlled 
-                by [CONSULTANT NAME]. We have no control over, and assume no responsibility for, the 
+                by Ayesha. We have no control over, and assume no responsibility for, the 
                 content, privacy policies, or practices of any third-party websites.
               </p>
             </section>
             <section>
               <h2 className="mb-2 text-xl font-semibold text-[#1B2A4A]">5. Changes to Disclaimer</h2>
               <p className="text-[#475569]">
-                [CONSULTANT NAME] reserves the right to modify or replace these terms at any time. 
+                Ayesha reserves the right to modify or replace these terms at any time. 
                 If revisions are material, we will notify users through updated posting of this disclaimer.
               </p>
             </section>

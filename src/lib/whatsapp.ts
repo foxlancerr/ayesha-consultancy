@@ -1,4 +1,4 @@
-const PHONE_PLACEHOLDER = "+92XXXXXXXXXX";
+const PHONE_PLACEHOLDER = "+923186652528";
 
 export function buildWhatsAppUrl(message: string): string {
   const encoded = encodeURIComponent(message);

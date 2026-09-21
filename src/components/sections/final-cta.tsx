@@ -20,7 +20,7 @@ export function FinalCTA() {
             Chat on WhatsApp
           </a>
           <a
-            href="tel:+92XXXXXXXXXX"
+            href="tel:+923186652528"
             className="inline-flex items-center gap-2.5 rounded-xl border border-white/20 bg-transparent px-8 py-4 text-base font-semibold text-white transition-all duration-200 hover:bg-white/10"
           >
             Call Now

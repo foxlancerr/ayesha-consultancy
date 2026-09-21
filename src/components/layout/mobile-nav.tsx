@@ -28,13 +28,13 @@ export function MobileNav({ onNavigate }: MobileNavProps) {
 
       <div className="mt-6 flex flex-col gap-3 border-t border-[#E2E8F0] pt-6">
         <a
-          href="tel:+92XXXXXXXXXX"
+          href="tel:+923186652528"
           className="flex items-center justify-center gap-2 rounded-xl bg-[#0F172A] px-4 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#1D4ED8]"
         >
-          [PHONE NUMBER]
+          923186652528
         </a>
         <a
-          href="https://wa.me/92XXXXXXXXXX?text=Hello%2C%20I%20need%20tax%20consultation%20services."
+          href="https://wa.me/923186652528?text=Hello%2C%20I%20need%20tax%20consultation%20services."
           className="flex items-center justify-center gap-2 rounded-xl bg-[#25D366] px-4 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#128C7E]"
         >
           WhatsApp

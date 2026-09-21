@@ -29,8 +29,8 @@ export function WhyChoose() {
           <h3 className="mb-6 text-xl font-bold text-[#0F172A]">Our Locations</h3>
           <div className="grid gap-6 md:grid-cols-3">
             {[
-              { city: "Islamabad", detail: "[ADDRESS]", phone: "[PHONE NUMBER]" },
-              { city: "Peshawar", detail: "[ADDRESS]", phone: "[PHONE NUMBER]" },
+              { city: "Islamabad", detail: "[ADDRESS]", phone: "923186652528" },
+              { city: "Peshawar", detail: "[ADDRESS]", phone: "923186652528" },
               { city: "Nationwide Remote", detail: "Video call, phone & WhatsApp", phone: "All of Pakistan" },
             ].map((loc, i) => (
               <div key={i} className="flex items-start gap-3">

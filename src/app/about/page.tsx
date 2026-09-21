@@ -6,8 +6,8 @@ import { Footer } from "@/components/layout/footer";
 import { WhatsAppCTA } from "@/components/layout/whatsapp-cta";
 
 export const metadata = {
-  title: "About | Tax Consultant Islamabad & Peshawar",
-  description: "Meet [CONSULTANT NAME], your professional tax consultant serving Islamabad, Peshawar, and all of Pakistan.",
+  title: "About | Ayesha Consultancy Islamabad & Peshawar",
+  description: "Meet Ayesha, your professional Ayesha Consultancy serving Islamabad, Peshawar, and all of Pakistan.",
 };
 
 export default function AboutPage() {

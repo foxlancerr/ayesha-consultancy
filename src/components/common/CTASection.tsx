@@ -18,13 +18,13 @@ export function CTASection({ title, subtitle, ctaLabel, ctaMessage }: CTASection
         <p className="mx-auto mb-10 max-w-2xl text-lg text-white/60 leading-relaxed">{subtitle}</p>
         <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
           <a
-            href={`https://wa.me/92XXXXXXXXXX?text=${encodeURIComponent(ctaMessage)}`}
+            href={`https://wa.me/923186652528?text=${encodeURIComponent(ctaMessage)}`}
             className="inline-flex items-center gap-2.5 rounded-xl bg-[#25D366] px-8 py-4 text-base font-semibold text-white transition-all duration-200 hover:bg-[#128C7E] shadow-sm"
           >
             {ctaLabel}
           </a>
           <a
-            href="tel:+92XXXXXXXXXX"
+            href="tel:+923186652528"
             className="inline-flex items-center gap-2.5 rounded-xl border border-white/20 bg-transparent px-8 py-4 text-base font-semibold text-white transition-all duration-200 hover:bg-white/10"
           >
             Call Now

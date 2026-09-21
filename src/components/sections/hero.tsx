@@ -37,8 +37,8 @@ export function Hero() {
           </div>
           <div className="mt-10 flex items-center gap-2 text-sm text-white/40">
             <Phone className="h-4 w-4" />
-            <a href="tel:+92XXXXXXXXXX" className="transition-colors hover:text-white/70">
-              Call Now: [PHONE NUMBER]
+            <a href="tel:+923186652528" className="transition-colors hover:text-white/70">
+              Call Now: 923186652528
             </a>
           </div>
         </div>

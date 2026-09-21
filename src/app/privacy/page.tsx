@@ -2,7 +2,7 @@ import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 
 export const metadata = {
-  title: "Privacy Policy | Tax Consultant Pakistan",
+  title: "Privacy Policy | Ayesha Consultancy Pakistan",
   description: "Read our privacy policy. Your information is handled with strict confidentiality and security.",
 };
 
@@ -16,7 +16,7 @@ export default function PrivacyPage() {
           <div className="space-y-6">
             <p className="text-[#475569]">Effective Date: [DATE]</p>
             <p className="text-[#475569]">
-              [CONSULTANT NAME] ("we," "our," or "us") is committed to protecting your privacy. 
+              Ayesha ("we," "our," or "us") is committed to protecting your privacy. 
               This Privacy Policy explains how we collect, use, and disclose your information 
               when you visit our website or contact our services.
             </p>
@@ -62,7 +62,7 @@ export default function PrivacyPage() {
               <h2 className="mb-2 text-xl font-semibold text-[#1B2A4A]">6. Contact Us</h2>
               <p className="text-[#475569]">
                 If you have any questions about this Privacy Policy, please contact 
-                us at [EMAIL] or call [PHONE NUMBER].
+                us at [EMAIL] or call 923186652528.
               </p>
             </section>
           </div>

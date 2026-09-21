@@ -17,7 +17,7 @@ export function Header() {
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 md:px-6 lg:px-8">
           <Link href="/" className="flex items-center gap-3">
             <div className="h-9 w-9 rounded-xl bg-white" />
-            <span className="text-xl font-bold text-white tracking-tight">TAX CONSULTANT</span>
+            <span className="text-xl font-bold text-white tracking-tight">Ayesha Consultancy</span>
           </Link>
 
           <nav className="hidden items-center gap-7 md:flex">
@@ -28,12 +28,12 @@ export function Header() {
           </nav>
 
           <div className="hidden items-center gap-3 md:flex">
-            <a href="tel:+92XXXXXXXXXX" className="flex items-center gap-2.5 rounded-lg bg-white/10 px-4 py-2.5 text-sm text-white transition-colors hover:bg-white/20">
+            <a href="tel:+923186652528" className="flex items-center gap-2.5 rounded-lg bg-white/10 px-4 py-2.5 text-sm text-white transition-colors hover:bg-white/20">
               <Phone className="h-4 w-4" />
-              <span>[PHONE NUMBER]</span>
+              <span>923186652528</span>
             </a>
             <a
-              href="https://wa.me/92XXXXXXXXXX?text=Hello%2C%20I%20need%20tax%20consultation%20services."
+              href="https://wa.me/923186652528?text=Hello%2C%20I%20need%20tax%20consultation%20services."
               className="inline-flex items-center gap-2 rounded-lg bg-[#25D366] px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#128C7E] shadow-sm"
             >
               <MessageCircle className="mr-2 h-4 w-4" />

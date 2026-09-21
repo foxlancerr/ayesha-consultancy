@@ -10,31 +10,31 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Tax Consultant Islamabad & Peshawar | Professional Tax Services",
-    template: "%s | Tax Consultant Pakistan",
+    default: "Ayesha Consultancy Islamabad & Peshawar | Professional Tax Services",
+    template: "%s | Ayesha Consultancy Pakistan",
   },
   description:
     "Professional tax consultancy serving Islamabad, Peshawar, and nationwide Pakistan. Expert income tax return filing, FBR compliance, wealth statement, and tax planning services.",
   keywords: [
-    "Tax Consultant Islamabad",
-    "Tax Consultant Peshawar",
+    "Ayesha Consultancy Islamabad",
+    "Ayesha Consultancy Peshawar",
     "Income Tax Return Filing Pakistan",
-    "FBR Tax Consultant",
+    "FBR Ayesha Consultancy",
     "Filer Assistance Pakistan",
     "Wealth Statement Assistance",
   ],
-  authors: [{ name: "[CONSULTANT NAME]" }],
+  authors: [{ name: "Ayesha" }],
   openGraph: {
-    title: "Tax Consultant Islamabad & Peshawar | Professional Tax Services",
+    title: "Ayesha Consultancy Islamabad & Peshawar | Professional Tax Services",
     description:
       "Professional tax consultancy serving Islamabad, Peshawar, and nationwide Pakistan.",
     type: "website",
     locale: "en_PK",
-    siteName: "Tax Consultant Pakistan",
+    siteName: "Ayesha Consultancy Pakistan",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tax Consultant Islamabad & Peshawar",
+    title: "Ayesha Consultancy Islamabad & Peshawar",
     description: "Professional tax consultancy serving Pakistan.",
   },
 };

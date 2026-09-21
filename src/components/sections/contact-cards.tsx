@@ -9,7 +9,7 @@ export function ContactCards() {
         title="WhatsApp"
         icon={<MessageCircle className="h-5 w-5 text-[#25D366]" />}
         details={[
-          { label: "Number", value: "[PHONE NUMBER]" },
+          { label: "Number", value: "923186652528" },
           { label: "Response", value: "Within 24 hours" },
         ]}
       />
@@ -17,7 +17,7 @@ export function ContactCards() {
         title="Phone"
         icon={<Phone className="h-5 w-5 text-[#2563EB]" />}
         details={[
-          { label: "Number", value: "[PHONE NUMBER]" },
+          { label: "Number", value: "923186652528" },
           { label: "Hours", value: "9 AM – 6 PM (PKT)" },
         ]}
       />

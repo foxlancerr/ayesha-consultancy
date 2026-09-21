@@ -4,7 +4,7 @@ import { Footer } from "@/components/layout/footer";
 import { WhatsAppCTA } from "@/components/layout/whatsapp-cta";
 
 export const metadata = {
-  title: "Not Found | Tax Consultant Pakistan",
+  title: "Not Found | Ayesha Consultancy Pakistan",
   description: "The page you are looking for could not be found.",
 };
 

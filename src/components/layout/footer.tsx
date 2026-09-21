@@ -33,7 +33,7 @@ export function Footer() {
           <div className="md:col-span-1">
             <div className="mb-4 flex items-center gap-3">
               <div className="h-9 w-9 rounded-xl bg-white/20" />
-              <span className="text-xl font-bold text-white">TAX CONSULTANT</span>
+              <span className="text-xl font-bold text-white">Ayesha Consultancy</span>
             </div>
             <p className="text-sm text-white/60 leading-relaxed">
               Professional tax consultancy serving Islamabad, Peshawar, and all of Pakistan through remote consultation.
@@ -64,18 +64,18 @@ export function Footer() {
         <div className="mt-12 border-t border-white/10 pt-8">
           <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
             <p className="text-sm text-white/40">
-              © {new Date().getFullYear()} [CONSULTANT NAME]. All rights reserved.
+              © {new Date().getFullYear()} Ayesha. All rights reserved.
             </p>
             <div className="flex items-center gap-6">
               <a
-                href="tel:+92XXXXXXXXXX"
+                href="tel:+923186652528"
                 className="flex items-center gap-2 text-sm text-white/50 transition-colors hover:text-white"
               >
                 <Phone className="h-4 w-4" />
-                [PHONE NUMBER]
+                923186652528
               </a>
               <a
-                href="https://wa.me/92XXXXXXXXXX"
+                href="https://wa.me/923186652528"
                 className="flex items-center gap-2 text-sm text-white/50 transition-colors hover:text-white"
               >
                 <MessageCircle className="h-4 w-4" />

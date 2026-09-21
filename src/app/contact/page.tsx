@@ -21,8 +21,8 @@ export default function ContactPage() {
           <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
               {[
-                { title: "WhatsApp", icon: "💬", color: "bg-[#F1F5F9] text-[#0F172A]", details: [{ label: "Number", value: "[PHONE NUMBER]" }, { label: "Response", value: "Within 24 hours" }] },
-                { title: "Phone", icon: "📞", color: "bg-[#EFF6FF] text-[#1D4ED8]", details: [{ label: "Number", value: "[PHONE NUMBER]" }, { label: "Hours", value: "9 AM – 6 PM (PKT)" }] },
+                { title: "WhatsApp", icon: "💬", color: "bg-[#F1F5F9] text-[#0F172A]", details: [{ label: "Number", value: "923186652528" }, { label: "Response", value: "Within 24 hours" }] },
+                { title: "Phone", icon: "📞", color: "bg-[#EFF6FF] text-[#1D4ED8]", details: [{ label: "Number", value: "923186652528" }, { label: "Hours", value: "9 AM – 6 PM (PKT)" }] },
                 { title: "Email", icon: "✉️", color: "bg-[#F0FDF4] text-[#15803D]", details: [{ label: "Address", value: "[EMAIL]" }, { label: "Response", value: "Within 48 hours" }] },
                 { title: "Offices", icon: "📍", color: "bg-[#F1F5F9] text-[#0F172A]", details: [{ label: "Islamabad", value: "[ADDRESS]" }, { label: "Peshawar", value: "[ADDRESS]" }] },
               ].map((item, i) => (

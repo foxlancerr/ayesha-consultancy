@@ -23,7 +23,7 @@ export const services: Service[] = [
     ],
     category: "Individual Services",
     slug: "individual-income-tax",
-    whatsappMessage: "I need help with Individual Income Tax Return Filing. Please call [PHONE NUMBER].",
+    whatsappMessage: "I need help with Individual Income Tax Return Filing. Please call 923186652528.",
   },
   {
     id: "individual-tax-planning",
@@ -38,7 +38,7 @@ export const services: Service[] = [
     ],
     category: "Individual Services",
     slug: "individual-tax-planning",
-    whatsappMessage: "I need Individual Tax Planning services. Please call [PHONE NUMBER].",
+    whatsappMessage: "I need Individual Tax Planning services. Please call 923186652528.",
   },
   {
     id: "salary-tax-optimization",
@@ -52,7 +52,7 @@ export const services: Service[] = [
     ],
     category: "Individual Services",
     slug: "salary-tax-optimization",
-    whatsappMessage: "I need Salary Tax Optimization. Please call [PHONE NUMBER].",
+    whatsappMessage: "I need Salary Tax Optimization. Please call 923186652528.",
   },
 
   // ---- Business Services ----
@@ -70,7 +70,7 @@ export const services: Service[] = [
     ],
     category: "Business Services",
     slug: "business-tax-return-filing",
-    whatsappMessage: "I need Business Tax Return Filing. Please call [PHONE NUMBER].",
+    whatsappMessage: "I need Business Tax Return Filing. Please call 923186652528.",
   },
   {
     id: "sales-tax-registration",
@@ -85,7 +85,7 @@ export const services: Service[] = [
     ],
     category: "Business Services",
     slug: "sales-tax-registration",
-    whatsappMessage: "I need Sales Tax Registration & Compliance. Please call [PHONE NUMBER].",
+    whatsappMessage: "I need Sales Tax Registration & Compliance. Please call 923186652528.",
   },
   {
     id: "corporate-tax-advisory",
@@ -99,7 +99,7 @@ export const services: Service[] = [
     ],
     category: "Business Services",
     slug: "corporate-tax-advisory",
-    whatsappMessage: "I need Corporate Tax Advisory. Please call [PHONE NUMBER].",
+    whatsappMessage: "I need Corporate Tax Advisory. Please call 923186652528.",
   },
   {
     id: "withholding-tax",
@@ -113,7 +113,7 @@ export const services: Service[] = [
     ],
     category: "Business Services",
     slug: "withholding-tax",
-    whatsappMessage: "I need Withholding Tax Management. Please call [PHONE NUMBER].",
+    whatsappMessage: "I need Withholding Tax Management. Please call 923186652528.",
   },
 
   // ---- FBR & Compliance ----
@@ -129,7 +129,7 @@ export const services: Service[] = [
     ],
     category: "FBR & Compliance",
     slug: "fbr-notice-response",
-    whatsappMessage: "I have received an FBR Notice and need help. Please call [PHONE NUMBER].",
+    whatsappMessage: "I have received an FBR Notice and need help. Please call 923186652528.",
   },
   {
     id: "fbr-registration",
@@ -143,7 +143,7 @@ export const services: Service[] = [
     ],
     category: "FBR & Compliance",
     slug: "fbr-registration",
-    whatsappMessage: "I need FBR Registration (NTN/STRN). Please call [PHONE NUMBER].",
+    whatsappMessage: "I need FBR Registration (NTN/STRN). Please call 923186652528.",
   },
   {
     id: "tax-audit-representation",
@@ -157,7 +157,7 @@ export const services: Service[] = [
     ],
     category: "FBR & Compliance",
     slug: "tax-audit-representation",
-    whatsappMessage: "I need Tax Audit Representation. Please call [PHONE NUMBER].",
+    whatsappMessage: "I need Tax Audit Representation. Please call 923186652528.",
   },
   {
     id: "tax-compliance-review",
@@ -171,7 +171,7 @@ export const services: Service[] = [
     ],
     category: "FBR & Compliance",
     slug: "tax-compliance-review",
-    whatsappMessage: "I need a Tax Compliance Review. Please call [PHONE NUMBER].",
+    whatsappMessage: "I need a Tax Compliance Review. Please call 923186652528.",
   },
 
   // ---- Other Confirmed Services ----
@@ -187,7 +187,7 @@ export const services: Service[] = [
     ],
     category: "Other Confirmed Services",
     slug: "estate-and-trust-tax",
-    whatsappMessage: "I need Estate & Trust Tax Planning. Please call [PHONE NUMBER].",
+    whatsappMessage: "I need Estate & Trust Tax Planning. Please call 923186652528.",
   },
   {
     id: "foreign-income-tax",
@@ -201,7 +201,7 @@ export const services: Service[] = [
     ],
     category: "Other Confirmed Services",
     slug: "foreign-income-tax",
-    whatsappMessage: "I need Foreign Income & Assets Reporting. Please call [PHONE NUMBER].",
+    whatsappMessage: "I need Foreign Income & Assets Reporting. Please call 923186652528.",
   },
   {
     id: "tax-dispute-resolution",
@@ -215,7 +215,7 @@ export const services: Service[] = [
     ],
     category: "Other Confirmed Services",
     slug: "tax-dispute-resolution",
-    whatsappMessage: "I need Tax Dispute Resolution. Please call [PHONE NUMBER].",
+    whatsappMessage: "I need Tax Dispute Resolution. Please call 923186652528.",
   },
   {
     id: "property-tax-services",
@@ -229,7 +229,7 @@ export const services: Service[] = [
     ],
     category: "Other Confirmed Services",
     slug: "property-tax-services",
-    whatsappMessage: "I need Property Tax Advisory. Please call [PHONE NUMBER].",
+    whatsappMessage: "I need Property Tax Advisory. Please call 923186652528.",
   },
 ];
 
@@ -355,11 +355,11 @@ export const documentCategories: DocumentCategory[] = [
 export const faqs: FAQ[] = [
   {
     question: "What documents do I need to file my income tax return?",
-    answer: "You typically need your CNIC copy, salary certificates or income statements, bank statements for the tax year, proof of eligible deductions (investments, insurance, loans), and any previous year's return. For a full list specific to your situation, consult our [CONSULTANT NAME].",
+    answer: "You typically need your CNIC copy, salary certificates or income statements, bank statements for the tax year, proof of eligible deductions (investments, insurance, loans), and any previous year's return. For a full list specific to your situation, consult our Ayesha.",
   },
   {
     question: "What is the deadline for filing tax returns in Pakistan?",
-    answer: "The tax return filing deadline is typically September 30th of each year for individuals, though it may be extended by FBR. Late filing results in penalties. Contact us at [PHONE NUMBER] to confirm the current deadline.",
+    answer: "The tax return filing deadline is typically September 30th of each year for individuals, though it may be extended by FBR. Late filing results in penalties. Contact us at 923186652528 to confirm the current deadline.",
   },
   {
     question: "Can I file my tax return online?",
@@ -367,23 +367,23 @@ export const faqs: FAQ[] = [
   },
   {
     question: "What deductions am I eligible for?",
-    answer: "Eligible deductions may include investments in approved schemes, life insurance premiums, charitable donations, home loan interest, and medical expenses — subject to FBR regulations. A personalized assessment by [CONSULTANT NAME] will clarify your specific eligibility.",
+    answer: "Eligible deductions may include investments in approved schemes, life insurance premiums, charitable donations, home loan interest, and medical expenses — subject to FBR regulations. A personalized assessment by Ayesha will clarify your specific eligibility.",
   },
   {
     question: "What should I do if I receive an FBR notice?",
-    answer: "Do not ignore it. Contact us immediately at [PHONE NUMBER]. We will analyze the notice, prepare a proper response, and represent you before FBR to resolve the matter efficiently and protect your rights.",
+    answer: "Do not ignore it. Contact us immediately at 923186652528. We will analyze the notice, prepare a proper response, and represent you before FBR to resolve the matter efficiently and protect your rights.",
   },
   {
     question: "How much does your tax consultancy service cost?",
-    answer: "Fees vary based on the complexity of your case and the services required. Please contact us at [PHONE NUMBER] or email [EMAIL] for a detailed and transparent fee quote tailored to your needs.",
+    answer: "Fees vary based on the complexity of your case and the services required. Please contact us at 923186652528 or email [EMAIL] for a detailed and transparent fee quote tailored to your needs.",
   },
   {
     question: "Do you offer services outside Islamabad and Peshawar?",
-    answer: "We primarily serve clients in Islamabad and Peshawar but also offer remote consultation and services across Pakistan. Contact us at [PHONE NUMBER] to discuss your location-specific needs.",
+    answer: "We primarily serve clients in Islamabad and Peshawar but also offer remote consultation and services across Pakistan. Contact us at 923186652528 to discuss your location-specific needs.",
   },
   {
     question: "Can you help with late or unfiled tax returns?",
-    answer: "Yes, we specialize in back-filing and rectifying unfiled returns. There may be penalties, but we work to minimize them. Contact [CONSULTANT NAME] at [PHONE NUMBER] to get started.",
+    answer: "Yes, we specialize in back-filing and rectifying unfiled returns. There may be penalties, but we work to minimize them. Contact Ayesha at 923186652528 to get started.",
   },
 ];
 
@@ -396,12 +396,12 @@ export const locations: Location[] = [
   {
     city: "Islamabad",
     address: "[ADDRESS], Islamabad, Pakistan",
-    phone: "[PHONE NUMBER]",
+    phone: "923186652528",
   },
   {
     city: "Peshawar",
     address: "[ADDRESS], Peshawar, Pakistan",
-    phone: "[PHONE NUMBER]",
+    phone: "923186652528",
   },
 ];
 
@@ -452,7 +452,7 @@ export const howItSteps = [
 // ---------------------------------------------------------------------------
 
 export const consultantProfile = {
-  name: "[CONSULTANT NAME]",
+  name: "Ayesha",
   qualification: "[QUALIFICATION]",
   professionalInformation: "[PROFESSIONAL INFORMATION]",
 };
@@ -475,6 +475,6 @@ export const testimonials: Testimonial[] = [
   {
     name: "[Client Name]",
     role: "[Client Role]",
-    text: "[Testimonial text placeholder]. A reliable and knowledgeable tax consultant — truly worth the trust.",
+    text: "[Testimonial text placeholder]. A reliable and knowledgeable Ayesha Consultancy — truly worth the trust.",
   },
 ];
