@@ -14,11 +14,11 @@ export default function DocumentsPage() {
     <>
       <Header />
       <main>
-        <section className="bg-[#0F172A] py-20 text-white">
+        <section className="bg-[#0F172A] py-24 text-white">
           <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
             <div className="mx-auto max-w-2xl text-center">
-              <h1 className="mb-4 text-3xl font-bold tracking-tight sm:text-4xl">Documents Required</h1>
-              <p className="text-lg text-white/60">Know what to prepare before your consultation.</p>
+              <h1 className="mb-5 text-3xl font-bold tracking-tight md:text-4xl">Documents Required</h1>
+              <p className="text-xl text-white/75">Know what to prepare before your consultation.</p>
             </div>
           </div>
         </section>

@@ -1,19 +1,20 @@
+import { ContactCard } from "@/components/common/CTASection";
+import { InquiryForm } from "@/components/common/InquiryForm";
 import { CTASection } from "@/components/common/CTASection";
 import { WhatsAppCTA } from "@/components/layout/whatsapp-cta";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
-import { InquiryForm } from "@/components/common/InquiryForm";
 
 export default function ContactPage() {
   return (
     <>
       <Header />
       <main>
-        <section className="bg-[#0F172A] py-20 text-white">
+        <section className="bg-[#0F172A] py-24 text-white">
           <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
             <div className="mx-auto max-w-2xl text-center">
-              <h1 className="mb-4 text-3xl font-bold tracking-tight sm:text-4xl">Get in Touch</h1>
-              <p className="text-lg text-white/60">Ready to discuss your tax needs? Reach out — we're here to help.</p>
+              <h1 className="mb-5 text-3xl font-bold tracking-tight md:text-4xl">Get in Touch</h1>
+              <p className="text-xl text-white/75">Ready to discuss your tax needs? Reach out — we're here to help.</p>
             </div>
           </div>
         </section>
@@ -26,17 +27,7 @@ export default function ContactPage() {
                 { title: "Email", icon: "✉️", color: "bg-[#F0FDF4] text-[#15803D]", details: [{ label: "Address", value: "[EMAIL]" }, { label: "Response", value: "Within 48 hours" }] },
                 { title: "Offices", icon: "📍", color: "bg-[#F1F5F9] text-[#0F172A]", details: [{ label: "Islamabad", value: "[ADDRESS]" }, { label: "Peshawar", value: "[ADDRESS]" }] },
               ].map((item, i) => (
-                <div key={i} className="rounded-xl border border-[#E2E8F0] bg-white p-8 shadow-sm">
-                  <div className="mb-4 flex items-center gap-3">
-                    <div className={`flex h-10 w-10 items-center justify-center rounded-lg ${item.color}`}>{item.icon}</div>
-                    <h3 className="text-lg font-semibold text-[#0F172A]">{item.title}</h3>
-                  </div>
-                  <ul className="space-y-2">
-                    {item.details.map((d, j) => (
-                      <li key={j} className="text-sm text-[#475569]">{d.label}: <span className="font-medium text-[#0F172A]">{d.value}</span></li>
-                    ))}
-                  </ul>
-                </div>
+                <ContactCard key={i} title={item.title} icon={item.icon} details={item.details} />
               ))}
             </div>
           </div>
@@ -44,8 +35,8 @@ export default function ContactPage() {
         <section className="bg-[#F8FAFC] py-20">
           <div className="mx-auto max-w-3xl px-4 md:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="mb-4 text-3xl font-bold tracking-tight text-[#0F172A] sm:text-4xl">Send Us a Message</h2>
-              <p className="text-lg text-[#475569]">Fill out the form below and we'll respond promptly via WhatsApp.</p>
+              <h2 className="mb-5 text-3xl font-bold tracking-tight text-[#0F172A] md:text-4xl">Send Us a Message</h2>
+              <p className="text-xl text-[#334155]">Fill out the form below and we'll respond promptly via WhatsApp.</p>
             </div>
             <div className="rounded-xl border border-[#E2E8F0] bg-white p-8 shadow-sm">
               <InquiryForm />

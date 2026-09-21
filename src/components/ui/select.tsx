@@ -24,9 +24,9 @@ export function Select({ value, onValueChange, placeholder, children, className 
   return (
     <SelectContext.Provider value={{ value, onValueChange, open, setOpen }}>
       <div className={cn("relative", className)}>
-        <div className="flex h-11 w-full items-center justify-between rounded-xl border border-[#CBD5E1] bg-white px-4 py-2.5 text-sm text-[#0F172A] transition-all duration-200 focus-within:border-[#1D4ED8] focus-within:ring-2 focus-within:ring-[#1D4ED8] focus-within:ring-offset-1">
-          <span className={value ? "text-[#0F172A]" : "text-[#94A3B8]"}>{value || placeholder}</span>
-          <svg className="h-4 w-4 text-[#64748B]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+        <div className="flex h-11 w-full items-center justify-between rounded-xl border border-[#CBD5E1] bg-white px-4 py-3 text-base text-[#0F172A] transition-all duration-200 focus-within:border-[#1D4ED8] focus-within:ring-2 focus-within:ring-[#1D4ED8] focus-within:ring-offset-1">
+          <span className={value ? "text-[#0F172A]" : "text-[#64748B]"}>{value || placeholder}</span>
+          <svg className="h-4 w-4 text-[#334155]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
           </svg>
         </div>
@@ -60,14 +60,14 @@ export function SelectContent({ children }: { children: React.ReactNode }) {
 
 export function SelectItem({ value, children }: { value: string; children: React.ReactNode }) {
   return (
-    <div className="cursor-pointer select-none rounded-lg px-4 py-2.5 text-sm text-[#0F172A] hover:bg-[#F1F5F9]">
+    <div className="cursor-pointer select-none rounded-lg px-4 py-3 text-base text-[#0F172A] hover:bg-[#F1F5F9]">
       {children}
     </div>
   );
 }
 
 export function SelectValue({ placeholder }: { placeholder: string }) {
-  return <span className="text-[#94A3B8]">{placeholder}</span>;
+  return <span className="text-[#64748B]">{placeholder}</span>;
 }
 
 export function SelectTrigger({ children, className }: { children?: React.ReactNode; className?: string }) {

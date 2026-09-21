@@ -7,6 +7,7 @@ import { Menu, Phone, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetHeader } from "@/components/ui/sheet";
 import { MobileNav } from "./mobile-nav";
+import { buildWhatsAppUrl } from "@/lib/whatsapp";
 
 export function Header() {
   const [open, setOpen] = React.useState(false);
@@ -21,10 +22,10 @@ export function Header() {
           </Link>
 
           <nav className="hidden items-center gap-7 md:flex">
-            <Link href="/services" className="text-sm font-medium text-white/70 transition-colors hover:text-white">Services</Link>
-            <Link href="/documents" className="text-sm font-medium text-white/70 transition-colors hover:text-white">Documents</Link>
-            <Link href="/about" className="text-sm font-medium text-white/70 transition-colors hover:text-white">About</Link>
-            <Link href="/contact" className="text-sm font-medium text-white/70 transition-colors hover:text-white">Contact</Link>
+            <Link href="/services" className="text-base font-medium text-white/80 transition-colors hover:text-white">Services</Link>
+            <Link href="/documents" className="text-base font-medium text-white/80 transition-colors hover:text-white">Documents</Link>
+            <Link href="/about" className="text-base font-medium text-white/80 transition-colors hover:text-white">About</Link>
+            <Link href="/contact" className="text-base font-medium text-white/80 transition-colors hover:text-white">Contact</Link>
           </nav>
 
           <div className="hidden items-center gap-3 md:flex">
@@ -33,18 +34,17 @@ export function Header() {
               <span>923186652528</span>
             </a>
             <a
-              href="https://wa.me/923186652528?text=Hello%2C%20I%20need%20tax%20consultation%20services."
-              className="inline-flex items-center gap-2 rounded-lg bg-[#25D366] px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#128C7E] shadow-sm"
+              href={buildWhatsAppUrl("Hello, I need tax consultation services.")}
+              className="inline-flex items-center gap-2 rounded-lg bg-[#15803D] px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#166534]"
             >
-              <MessageCircle className="mr-2 h-4 w-4" />
+              <MessageCircle className="h-4 w-4" />
               WhatsApp
             </a>
           </div>
 
           <button
-            className="rounded-lg p-2 text-white transition-colors hover:bg-white/10 md:hidden"
+            className="md:hidden rounded-lg p-2 text-white/80 hover:bg-white/10"
             onClick={() => setOpen(true)}
-            aria-label="Open menu"
           >
             <Menu className="h-5 w-5" />
           </button>
@@ -54,9 +54,8 @@ export function Header() {
       <Sheet open={open} onOpenChange={setOpen}>
         <SheetContent>
           <SheetHeader>
-            <span className="font-semibold text-[#0F172A] text-lg">Menu</span>
+            <MobileNav onNavigate={() => setOpen(false)} />
           </SheetHeader>
-          <MobileNav onNavigate={() => setOpen(false)} />
         </SheetContent>
       </Sheet>
     </>

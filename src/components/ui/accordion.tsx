@@ -65,7 +65,7 @@ const AccordionTrigger = React.forwardRef<HTMLButtonElement, AccordionTriggerPro
       <button
         ref={ref}
         className={cn(
-          "flex w-full items-center justify-between py-5 text-left font-medium text-[#0F172A] transition-colors hover:text-[#1D4ED8]",
+          "flex w-full items-center justify-between py-5 text-left text-base font-semibold text-[#0F172A] transition-colors hover:text-[#1D4ED8]",
           className
         )}
         onClick={() => {
@@ -96,7 +96,7 @@ const AccordionContent = React.forwardRef<HTMLDivElement, AccordionContentProps>
     return (
       <div
         ref={ref}
-        className={cn("overflow-hidden text-sm text-[#475569] pb-5 leading-relaxed", className)}
+        className={cn("overflow-hidden text-base text-[#334155] pb-5 leading-relaxed", className)}
         style={{ display: isActive ? "block" : "none" }}
         {...props}
       >

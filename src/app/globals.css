@@ -12,10 +12,9 @@
   --navy: #0F172A;
   --blue: #1D4ED8;
   --green: #15803D;
-  --muted: #475569;
+  --muted: #334155;
   --border: #E2E8F0;
   --accent: #F8FAFC;
-  --accent-alt: #EFF6FF;
 }
 
 @theme inline {

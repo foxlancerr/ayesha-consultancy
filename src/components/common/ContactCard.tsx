@@ -8,18 +8,18 @@ interface ContactCardProps {
 
 export function ContactCard({ title, icon, details }: ContactCardProps) {
   return (
-    <div className="rounded-xl border border-[#E2E8F0] bg-white p-6">
-      <div className="mb-4 flex items-center gap-3">
-        <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#F1F5F9] text-[#1B2A4A]">
+    <div className="rounded-xl border border-[#E2E8F0] bg-white p-8 shadow-sm">
+      <div className="mb-5 flex items-center gap-3">
+        <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#F1F5F9] text-[#0F172A]">
           {icon}
         </div>
-        <h3 className="text-lg font-semibold text-[#1B2A4A]">{title}</h3>
+        <h3 className="text-lg font-semibold text-[#0F172A]">{title}</h3>
       </div>
-      <ul className="space-y-2">
+      <ul className="space-y-3">
         {details.map((detail, i) => (
-          <li key={i} className="text-sm text-[#64748B]">
+          <li key={i} className="text-base text-[#334155]">
             {detail.label}:{" "}
-            <span className="font-medium text-[#1B2A4A]">{detail.value}</span>
+            <span className="font-semibold text-[#0F172A]">{detail.value}</span>
           </li>
         ))}
       </ul>

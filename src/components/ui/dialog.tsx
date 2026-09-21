@@ -49,7 +49,7 @@ interface DialogTitleProps extends React.HTMLAttributes<HTMLHeadingElement> {}
 
 const DialogTitle = React.forwardRef<HTMLHeadingElement, DialogTitleProps>(
   ({ className, ...props }, ref) => (
-    <h2 ref={ref} className={cn("text-xl font-semibold text-[#1B2A4A]", className)} {...props} />
+    <h2 ref={ref} className={cn("text-xl font-semibold text-[#0F172A]", className)} {...props} />
   )
 );
 DialogTitle.displayName = "DialogTitle";
@@ -70,7 +70,7 @@ interface DialogCloseProps extends React.ButtonHTMLAttributes<HTMLButtonElement>
 const DialogClose = React.forwardRef<HTMLButtonElement, DialogCloseProps>(
   ({ className, ...props }, ref) => (
     <Button variant="ghost" size="sm" ref={ref} className="absolute top-4 right-4" {...props}>
-      <X className="h-4 w-4" />
+      <X className="h-5 w-5" />
     </Button>
   )
 );

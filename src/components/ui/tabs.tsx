@@ -34,10 +34,10 @@ const Tabs = React.forwardRef<HTMLDivElement, TabsProps>(
                 aria-selected={activeValue === (trigger as any).props.value}
                 onClick={() => handleChange((trigger as any).props.value)}
                 className={cn(
-                  "px-6 py-3 text-sm font-medium transition-colors border-b-2 -mb-px",
+                  "px-6 py-3.5 text-base font-medium transition-colors border-b-2 -mb-px",
                   activeValue === (trigger as any).props.value
-                    ? "border-[#2563EB] text-[#2563EB]"
-                    : "border-transparent text-[#64748B] hover:text-[#1B2A4A] hover:border-[#CBD5E1]"
+                    ? "border-[#1D4ED8] text-[#1D4ED8]"
+                    : "border-transparent text-[#334155] hover:text-[#0F172A] hover:border-[#CBD5E1]"
                 )}
               >
                 {(trigger as any).props.children}

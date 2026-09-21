@@ -16,11 +16,11 @@ const buttonVariants = cva(
         ghost:
           "text-[#0F172A] hover:bg-[#F1F5F9] focus-visible:ring-[#0F172A]",
         whatsapp:
-          "bg-[#25D366] text-white hover:bg-[#128C7E] focus-visible:ring-[#25D366] shadow-sm",
+          "bg-[#15803D] text-white hover:bg-[#166534] focus-visible:ring-[#15803D] shadow-sm",
       },
       size: {
         default: "px-6 py-3.5 text-sm",
-        sm: "px-4 py-2 text-xs",
+        sm: "px-4 py-2 text-sm",
         lg: "px-8 py-4 text-base",
       },
     },

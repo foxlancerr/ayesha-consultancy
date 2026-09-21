@@ -83,7 +83,7 @@ export function InquiryForm() {
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
       <div className="grid gap-4 sm:grid-cols-2">
         <div>
-          <Label htmlFor="name" className="text-sm font-medium text-[#0F172A]">Full Name *</Label>
+          <Label htmlFor="name" className="text-base font-semibold text-[#0F172A]">Full Name *</Label>
           <Input
             id="name"
             placeholder="Your full name"
@@ -91,11 +91,11 @@ export function InquiryForm() {
             {...register("name")}
           />
           {errors.name && (
-            <p className="mt-1 text-xs text-red-600">{errors.name.message}</p>
+            <p className="mt-1.5 text-sm text-red-600">{errors.name.message}</p>
           )}
         </div>
         <div>
-          <Label htmlFor="phone" className="text-sm font-medium text-[#0F172A]">Phone / WhatsApp *</Label>
+          <Label htmlFor="phone" className="text-base font-semibold text-[#0F172A]">Phone / WhatsApp *</Label>
           <Input
             id="phone"
             type="tel"
@@ -104,14 +104,14 @@ export function InquiryForm() {
             {...register("phone")}
           />
           {errors.phone && (
-            <p className="mt-1 text-xs text-red-600">{errors.phone.message}</p>
+            <p className="mt-1.5 text-sm text-red-600">{errors.phone.message}</p>
           )}
         </div>
       </div>
 
       <div className="grid gap-4 sm:grid-cols-2">
         <div>
-          <Label htmlFor="city" className="text-sm font-medium text-[#0F172A]">City *</Label>
+          <Label htmlFor="city" className="text-base font-semibold text-[#0F172A]">City *</Label>
           <Select value={selectedCity} onValueChange={setSelectedCity} placeholder="Select your city">
             <SelectTrigger />
             <SelectContent>
@@ -121,11 +121,11 @@ export function InquiryForm() {
             </SelectContent>
           </Select>
           {errors.city && (
-            <p className="mt-1 text-xs text-red-600">{errors.city.message}</p>
+            <p className="mt-1.5 text-sm text-red-600">{errors.city.message}</p>
           )}
         </div>
         <div>
-          <Label htmlFor="clientType" className="text-sm font-medium text-[#0F172A]">Client Type *</Label>
+          <Label htmlFor="clientType" className="text-base font-semibold text-[#0F172A]">Client Type *</Label>
           <Select value={selectedClientType} onValueChange={setSelectedClientType} placeholder="Select client type">
             <SelectTrigger />
             <SelectContent>
@@ -135,13 +135,13 @@ export function InquiryForm() {
             </SelectContent>
           </Select>
           {errors.clientType && (
-            <p className="mt-1 text-xs text-red-600">{errors.clientType.message}</p>
+            <p className="mt-1.5 text-sm text-red-600">{errors.clientType.message}</p>
           )}
         </div>
       </div>
 
       <div>
-        <Label htmlFor="service" className="text-sm font-medium text-[#0F172A]">Service of Interest</Label>
+        <Label htmlFor="service" className="text-base font-semibold text-[#0F172A]">Service of Interest</Label>
         <Select value={selectedService} onValueChange={setSelectedService} placeholder="Select a service (optional)">
           <SelectTrigger />
           <SelectContent>
@@ -153,7 +153,7 @@ export function InquiryForm() {
       </div>
 
       <div>
-        <Label htmlFor="message" className="text-sm font-medium text-[#0F172A]">Message *</Label>
+        <Label htmlFor="message" className="text-base font-semibold text-[#0F172A]">Message *</Label>
         <Textarea
           id="message"
           placeholder="Tell us about your tax needs..."
@@ -161,16 +161,16 @@ export function InquiryForm() {
           {...register("message")}
         />
         {errors.message && (
-          <p className="mt-1 text-xs text-red-600">{errors.message.message}</p>
+          <p className="mt-1.5 text-sm text-red-600">{errors.message.message}</p>
         )}
       </div>
 
       <Button type="submit" className="w-full bg-[#0F172A] text-white hover:bg-[#1D4ED8]">
-        <MessageCircle className="mr-2 h-4 w-4" />
+        <MessageCircle className="mr-2 h-5 w-5" />
         Send via WhatsApp
       </Button>
 
-      <p className="text-center text-xs text-[#94A3B8]">
+      <p className="text-center text-sm text-[#64748B]">
         Your information is handled with strict confidentiality. No backend storage is used.
       </p>
     </form>

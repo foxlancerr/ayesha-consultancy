@@ -1,6 +1,5 @@
 import { howItSteps } from "@/lib/data";
 import { SectionHeader } from "./section-header";
-import { Check } from "lucide-react";
 
 export function HowItWorks() {
   return (
@@ -11,14 +10,14 @@ export function HowItWorks() {
           subtitle="Process"
           description="A simple, straightforward process to get your tax affairs handled professionally."
         />
-        <div className="grid gap-8 md:grid-cols-4">
+        <div className="grid gap-10 md:grid-cols-4">
           {howItSteps.map((step) => (
             <div key={step.step} className="flex flex-col items-center text-center">
-              <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-[#0F172A] text-white shadow-sm">
-                <span className="text-lg font-bold">{step.step}</span>
+              <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-[#0F172A] text-white shadow-sm">
+                <span className="text-xl font-bold">{step.step}</span>
               </div>
-              <h3 className="mb-3 text-base font-semibold text-[#0F172A]">{step.title}</h3>
-              <p className="text-sm text-[#475569] leading-relaxed">{step.description}</p>
+              <h3 className="mb-3 text-lg font-semibold text-[#0F172A]">{step.title}</h3>
+              <p className="text-base text-[#334155] leading-relaxed">{step.description}</p>
             </div>
           ))}
         </div>
