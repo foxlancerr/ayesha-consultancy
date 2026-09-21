@@ -1,0 +1,32 @@
+import { buildWhatsAppUrl } from "@/lib/whatsapp";
+import { MessageCircle } from "lucide-react";
+
+export function FinalCTA() {
+  return (
+    <section className="bg-[#0F172A] py-20 text-white">
+      <div className="mx-auto max-w-3xl px-4 text-center md:px-6 lg:px-8">
+        <h2 className="mb-4 text-3xl font-bold tracking-tight sm:text-4xl">
+          Ready to Get Started?
+        </h2>
+        <p className="mx-auto mb-10 max-w-xl text-lg text-white/60 leading-relaxed">
+          Don't let tax stress hold you back. Contact us today for professional, reliable tax consultancy services.
+        </p>
+        <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+          <a
+            href={buildWhatsAppUrl("Hello, I would like to book a tax consultation.")}
+            className="inline-flex items-center gap-2.5 rounded-xl bg-[#25D366] px-8 py-4 text-base font-semibold text-white transition-all duration-200 hover:bg-[#128C7E] shadow-sm"
+          >
+            <MessageCircle className="h-5 w-5" />
+            Chat on WhatsApp
+          </a>
+          <a
+            href="tel:+92XXXXXXXXXX"
+            className="inline-flex items-center gap-2.5 rounded-xl border border-white/20 bg-transparent px-8 py-4 text-base font-semibold text-white transition-all duration-200 hover:bg-white/10"
+          >
+            Call Now
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
