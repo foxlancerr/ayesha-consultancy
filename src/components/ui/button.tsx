@@ -1,5 +1,3 @@
-"use client";
-
 import * as React from "react";
 import { cn } from "@/lib/utils";
 import { VariantProps, cva } from "class-variance-authority";
@@ -10,17 +8,17 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-[#0F172A] text-white hover:bg-[#1D4ED8] focus-visible:ring-[#1D4ED8] shadow-sm",
+          "bg-[#0E2944] text-white hover:bg-[#1D4ED8] focus-visible:ring-[#1D4ED8] shadow-sm",
         outline:
-          "border border-[#0F172A] text-[#0F172A] bg-transparent hover:bg-[#0F172A] hover:text-white focus-visible:ring-[#0F172A] shadow-sm",
+          "border border-[#0E2944] text-[#0E2944] bg-transparent hover:bg-[#0E2944] hover:text-white focus-visible:ring-[#0E2944] shadow-sm",
         ghost:
-          "text-[#0F172A] hover:bg-[#F1F5F9] focus-visible:ring-[#0F172A]",
+          "text-[#0E2944] hover:bg-[#F1F5F9] focus-visible:ring-[#0E2944]",
         whatsapp:
           "bg-[#15803D] text-white hover:bg-[#166534] focus-visible:ring-[#15803D] shadow-sm",
       },
       size: {
         default: "px-6 py-3.5 text-sm",
-        sm: "px-4 py-2 text-sm",
+        sm: "px-4 py-2.5 text-sm",
         lg: "px-8 py-4 text-base",
       },
     },

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
+import { Phone, MessageCircle } from "lucide-react";
 
 interface MobileNavProps {
   onNavigate?: () => void;
@@ -20,7 +20,7 @@ export function MobileNav({ onNavigate }: MobileNavProps) {
         <Link
           key={link.href}
           href={link.href}
-          className="rounded-lg px-4 py-3 text-base font-medium text-[#0F172A] transition-colors hover:bg-[#F1F5F9]"
+          className="rounded-lg px-4 py-3 text-base font-medium text-[#334155] transition-colors hover:bg-[#F1F5F9]"
         >
           {link.label}
         </Link>
@@ -29,14 +29,16 @@ export function MobileNav({ onNavigate }: MobileNavProps) {
       <div className="mt-6 flex flex-col gap-3 border-t border-[#E2E8F0] pt-6">
         <a
           href="tel:+923186652528"
-          className="flex items-center justify-center gap-2 rounded-xl bg-[#0F172A] px-4 py-3 text-base font-semibold text-white transition-colors hover:bg-[#1D4ED8]"
+          className="flex items-center justify-center gap-2 rounded-xl bg-[#0E2944] px-4 py-3 text-base font-semibold text-white transition-colors hover:bg-[#0A1E33]"
         >
-          923186652528
+          <Phone className="h-4 w-4" />
+          +92 318 665 2528
         </a>
         <a
           href="https://wa.me/923186652528?text=Hello%2C%20I%20need%20tax%20consultation%20services."
           className="flex items-center justify-center gap-2 rounded-xl bg-[#15803D] px-4 py-3 text-base font-semibold text-white transition-colors hover:bg-[#166534]"
         >
+          <MessageCircle className="h-4 w-4" />
           WhatsApp
         </a>
       </div>

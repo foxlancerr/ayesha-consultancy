@@ -1,4 +1,4 @@
-// Color references: deep navy (#1B2A4A), professional blue (#2563EB), dark green (#166534)
+// Color references: deep navy (#0E2944), professional blue (#1D4ED8), dark green (#15803D)
 
 import type { Service, Persona, DocumentCategory, FAQ, Location, TrustItem, Testimonial } from "@/types";
 

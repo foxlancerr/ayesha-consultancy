@@ -8,8 +8,9 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #0F172A;
-  --navy: #0F172A;
+  --foreground: #0E2944;
+  --navy: #0E2944;
+  --navy-deep: #0A1E33;
   --blue: #1D4ED8;
   --green: #15803D;
   --muted: #334155;
@@ -21,6 +22,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-navy: var(--navy);
+  --color-navy-deep: var(--navy-deep);
   --color-blue: var(--blue);
   --color-green: var(--green);
   --color-muted: var(--muted);
@@ -81,4 +83,79 @@ body {
   .no-print {
     display: none !important;
   }
+}
+
+/* Section separator - visually connects sections */
+.section-separator {
+  position: relative;
+}
+
+.section-separator::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right-0: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #E2E8F0 20%, #E2E8F0 80%, transparent);
+}
+
+/* List reset with proper markers */
+.list-check {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list-check li {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.list-check li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.375em;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: var(--green);
+  border-radius: 50%;
+}
+
+/* Number list */
+.list-numbered {
+  list-style: none;
+  padding-left: 0;
+  counter-reset: step-counter;
+}
+
+.list-numbered li {
+  counter-increment: step-counter;
+  position: relative;
+  padding-left: 3.5rem;
+}
+
+.list-numbered li::before {
+  content: counter(step-counter);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: var(--navy);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+/* Info bar link styles */
+.info-bar-link {
+  transition: color 150ms ease;
+}
+.info-bar-link:hover {
+  color: #ffffff;
 }

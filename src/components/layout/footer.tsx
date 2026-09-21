@@ -27,7 +27,7 @@ const footerLinks: Record<string, Array<{ href: string; label: string }>> = {
 
 export function Footer() {
   return (
-    <footer className="border-t border-[#E2E8F0] bg-[#0F172A] text-white no-print">
+    <footer className="border-t border-[#E2E8F0] bg-[#0E2944] text-white no-print">
       <div className="mx-auto max-w-7xl px-4 py-16 md:px-6 lg:px-8">
         <div className="grid gap-12 md:grid-cols-4">
           <div className="md:col-span-1">
@@ -42,7 +42,7 @@ export function Footer() {
 
           {Object.entries(footerLinks).map(([title, links]) => (
             <div key={title}>
-              <h4 className="mb-4 text-xs font-semibold uppercase tracking-widest text-white/70">
+              <h4 className="mb-4 text-xs font-semibold uppercase tracking-widest text-white/60">
                 {title}
               </h4>
               <ul className="space-y-3">
@@ -72,7 +72,7 @@ export function Footer() {
                 className="flex items-center gap-2 text-base text-white/70 transition-colors hover:text-white"
               >
                 <Phone className="h-4 w-4" />
-                923186652528
+                +92 318 665 2528
               </a>
               <a
                 href="https://wa.me/923186652528"

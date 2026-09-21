@@ -7,7 +7,7 @@ import { WhatsAppCTA } from "@/components/layout/whatsapp-cta";
 
 export const metadata = {
   title: "About | Ayesha Consultancy Islamabad & Peshawar",
-  description: "Meet Ayesha, your professional Ayesha Consultancy serving Islamabad, Peshawar, and all of Pakistan.",
+  description: "Meet the consultant behind Ayesha Consultancy serving Islamabad, Peshawar, and all of Pakistan.",
 };
 
 export default function AboutPage() {
@@ -15,7 +15,7 @@ export default function AboutPage() {
     <>
       <Header />
       <main>
-        <section className="bg-[#0F172A] py-20 text-white">
+        <section className="bg-[#0E2944] py-28 text-white">
           <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
             <SectionHeader title="About Us" subtitle="Who We Are" description="Your trusted partner for professional tax consultancy in Pakistan." />
           </div>

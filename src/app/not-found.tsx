@@ -14,12 +14,12 @@ export default function NotFound() {
       <Header />
       <main className="flex min-h-[60vh] items-center justify-center bg-white">
         <div className="text-center">
-          <h1 className="mb-4 text-6xl font-bold text-[#0F172A]">404</h1>
-          <h2 className="mb-4 text-2xl font-semibold text-[#0F172A]">Page Not Found</h2>
-          <p className="mb-8 text-base text-[#334155]">The page you are looking for does not exist.</p>
+          <h1 className="mb-4 text-7xl font-bold text-[#0E2944]">404</h1>
+          <h2 className="mb-4 text-2xl font-semibold text-[#0E2944]">Page Not Found</h2>
+          <p className="mb-8 text-lg text-[#334155]">The page you are looking for does not exist.</p>
           <a
             href="/"
-            className="inline-flex items-center gap-2.5 rounded-xl bg-[#0F172A] px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-[#1D4ED8]"
+            className="inline-flex items-center gap-2.5 rounded-xl bg-[#0E2944] px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-[#1D4ED8]"
           >
             Return Home
           </a>

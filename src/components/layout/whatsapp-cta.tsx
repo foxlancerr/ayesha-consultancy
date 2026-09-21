@@ -22,13 +22,13 @@ export function WhatsAppCTA({ message }: { message?: string }) {
           onFocus={() => setTooltipVisible(true)}
           onBlur={() => setTooltipVisible(false)}
         >
-          <MessageCircle className="h-7 w-7" />
+          <MessageCircle className="h-6 w-6" />
         </a>
 
         {tooltipVisible && (
-          <div className="absolute right-16 top-1/2 -translate-y-1/2 rounded-lg bg-[#0F172A] px-3 py-2 text-sm font-medium text-white shadow-lg">
+          <div className="absolute right-16 top-1/2 -translate-y-1/2 rounded-lg bg-[#0E2944] px-3 py-2 text-sm font-medium text-white shadow-lg">
             Chat on WhatsApp
-            <div className="absolute right-[-6px] top-1/2 h-3 w-3 rotate-45 bg-[#0F172A]" />
+            <div className="absolute right-[-6px] top-1/2 h-3 w-3 rotate-45 bg-[#0E2944]" />
           </div>
         )}
       </div>

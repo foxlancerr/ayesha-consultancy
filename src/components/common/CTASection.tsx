@@ -12,9 +12,9 @@ interface CTASectionProps {
 
 export function CTASection({ title, subtitle, ctaLabel, ctaMessage }: CTASectionProps) {
   return (
-    <section className="bg-[#0F172A] py-24 text-white">
+    <section className="bg-[#0E2944] py-28 text-white">
       <div className="mx-auto max-w-7xl px-4 text-center md:px-6 lg:px-8">
-        <h2 className="mb-5 text-3xl font-bold tracking-tight md:text-4xl">{title}</h2>
+        <h2 className="mb-5 text-4xl font-bold tracking-tight md:text-5xl">{title}</h2>
         <p className="mx-auto mb-10 max-w-2xl text-xl text-white/75 leading-relaxed">{subtitle}</p>
         <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
           <a
@@ -45,16 +45,16 @@ export function ContactCard({ title, icon, details }: ContactCardProps) {
   return (
     <div className="rounded-xl border border-[#E2E8F0] bg-white p-8 shadow-sm">
       <div className="mb-5 flex items-center gap-3">
-        <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#F1F5F9] text-[#0F172A]">
+        <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#F1F5F9] text-[#0E2944]">
           {icon}
         </div>
-        <h3 className="text-lg font-semibold text-[#0F172A]">{title}</h3>
+        <h3 className="text-lg font-semibold text-[#0E2944]">{title}</h3>
       </div>
       <ul className="space-y-3">
         {details.map((detail, i) => (
           <li key={i} className="text-base text-[#334155]">
             {detail.label}:{" "}
-            <span className="font-semibold text-[#0F172A]">{detail.value}</span>
+            <span className="font-semibold text-[#0E2944]">{detail.value}</span>
           </li>
         ))}
       </ul>

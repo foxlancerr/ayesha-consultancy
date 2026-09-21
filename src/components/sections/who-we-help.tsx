@@ -1,12 +1,12 @@
-import { personas } from "@/lib/data";
 import { SectionHeader } from "./section-header";
+import { personas } from "@/lib/data";
 import { PersonaCard } from "./persona-card";
 
 export function WhoWeHelp() {
   const displayPersonas = personas.slice(0, 6);
 
   return (
-    <section className="bg-white py-20">
+    <section className="bg-white py-24">
       <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
         <SectionHeader
           title="Who We Help"

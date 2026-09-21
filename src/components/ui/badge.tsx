@@ -1,5 +1,3 @@
-"use client";
-
 import * as React from "react";
 import { cn } from "@/lib/utils";
 
@@ -10,9 +8,9 @@ interface BadgeProps extends React.HTMLAttributes<HTMLSpanElement> {
 const Badge = React.forwardRef<HTMLSpanElement, BadgeProps>(
   ({ className, variant = "default", ...props }, ref) => {
     const variants = {
-      default: "bg-[#0F172A] text-white",
-      secondary: "bg-[#F1F5F9] text-[#0F172A]",
-      outline: "border border-[#0F172A] text-[#0F172A] bg-transparent",
+      default: "bg-[#0E2944] text-white",
+      secondary: "bg-[#F0FDF4] text-[#15803D]",
+      outline: "border border-[#0E2944] text-[#0E2944] bg-transparent",
       green: "bg-[#15803D] text-white",
     };
 
