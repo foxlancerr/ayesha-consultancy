@@ -1,74 +1,137 @@
-import { Header } from "@/components/layout/header";
-import { Footer } from "@/components/layout/footer";
+import type { Metadata } from "next";
+import { SiteShell } from "@/components/site/site-shell";
+import { Container } from "@/components/site/container";
+import { CTASection } from "@/components/site/cta-section";
+import { siteConfig } from "@/lib/site";
 
-export const metadata = {
-  title: "Privacy Policy | Ayesha Consultancy Pakistan",
-  description: "Read our privacy policy. Your information is handled with strict confidentiality and security.",
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description:
+    "How this tax consultancy collects, uses, and protects information you share when you make an inquiry or engage the consultant's services.",
+  alternates: { canonical: "/privacy" },
+  openGraph: {
+    title: "Privacy Policy",
+    description: "How this tax consultancy handles information you share.",
+    url: "/privacy",
+  },
 };
 
-export default function PrivacyPage() {
+export default function PrivacyRoute() {
   return (
-    <>
-      <Header />
-      <main className="bg-white py-24">
-        <div className="mx-auto max-w-3xl px-4 md:px-6 lg:px-8">
-          <h1 className="mb-8 text-4xl font-bold text-[#0E2944]">Privacy Policy</h1>
-          <div className="space-y-6">
-            <p className="text-lg text-[#334155]">Effective Date: [DATE]</p>
-            <p className="text-lg text-[#334155] leading-relaxed">
-              Ayesha ("we," "our," or "us") is committed to protecting your privacy.
-              This Privacy Policy explains how we collect, use, and disclose your information
-              when you visit our website or contact our services.
+    <SiteShell>
+      <section aria-labelledby="privacy-title" className="section-padding">
+        <Container className="flex flex-col gap-8 max-w-3xl">
+          <header className="flex flex-col gap-3">
+            <span className="eyebrow">Legal</span>
+            <h1 id="privacy-title" className="text-2xl sm:text-3xl font-semibold text-foreground">
+              Privacy Policy
+            </h1>
+            <p className="text-sm text-muted-foreground">
+              Last updated: {new Date().toLocaleDateString("en-PK", { year: "numeric", month: "long", day: "numeric" })}
             </p>
-            <section>
-              <h2 className="mb-3 text-xl font-bold text-[#0E2944]">1. Information We Collect</h2>
-              <p className="text-lg text-[#334155] leading-relaxed">
-                We may collect personal information you provide through our contact form,
-                WhatsApp messages, or phone calls. This may include your name, phone number,
-                email address, city, and any messages regarding your tax needs.
+          </header>
+
+          <div className="flex flex-col gap-6 text-sm sm:text-base text-muted-foreground leading-relaxed">
+            <Section title="Overview">
+              <p>
+                This policy explains how {siteConfig.name} (&quot;the consultancy&quot;,
+                &quot;we&quot;, &quot;us&quot;) handles the information you share when you make
+                an inquiry or engage the consultant&apos;s services. It is written in plain
+                language so you understand exactly what happens to your information.
               </p>
-            </section>
-            <section>
-              <h2 className="mb-3 text-xl font-bold text-[#0E2944]">2. How We Use Your Information</h2>
-              <p className="text-lg text-[#334155] leading-relaxed">
-                We use your information solely to respond to your inquiries, provide tax
-                consultancy services, and communicate with you regarding your engagement.
-                We do not use your information for any purpose beyond these services.
+            </Section>
+
+            <Section title="Information you share with us">
+              <p>
+                When you reach out by WhatsApp, phone, email, or the inquiry form,
+                you may share information such as your name, phone number, city,
+                the service you are interested in, and the documents you provide
+                for the engagement. We only collect what you choose to share.
               </p>
-            </section>
-            <section>
-              <h2 className="mb-3 text-xl font-bold text-[#0E2944]">3. Information Sharing</h2>
-              <p className="text-lg text-[#334155] leading-relaxed">
-                We do not sell, trade, or otherwise transfer your personal information
-                to third parties. Your information is kept confidential and shared only
-                as necessary to provide our services.
+            </Section>
+
+            <Section title="How we use your information">
+              <p>
+                Your information is used only for the purpose of responding to
+                your inquiry, understanding your situation, preparing the work
+                you engage the consultant to perform, and corresponding with you
+                during and after the engagement. We do not use your information
+                for marketing, and we do not sell or rent it to any third party.
               </p>
-            </section>
-            <section>
-              <h2 className="mb-3 text-xl font-bold text-[#0E2944]">4. Data Security</h2>
-              <p className="text-lg text-[#334155] leading-relaxed">
-                We take reasonable measures to protect your information. However,
-                please note that no method of transmission over the internet is 100% secure.
+            </Section>
+
+            <Section title="How your information is stored">
+              <p>
+                Information you share by WhatsApp is held within your WhatsApp
+                conversation with the consultant. Information shared by email is
+                held within the consultancy email account. Documents you share
+                for an engagement are retained only as long as needed for that
+                engagement and applicable record-keeping, and are then securely
+                deleted or returned to you on request.
               </p>
-            </section>
-            <section>
-              <h2 className="mb-3 text-xl font-bold text-[#0E2944]">5. Your Rights</h2>
-              <p className="text-lg text-[#334155] leading-relaxed">
-                You may contact us at any time to request access to, correction of,
-                or deletion of your personal information.
+            </Section>
+
+            <Section title="When we share information with third parties">
+              <p>
+                We share your information with third parties only when necessary
+                to perform the engagement you have authorised (for example, when
+                filing your return in IRIS on your behalf), when required by law,
+                or with your explicit consent. We never share your information
+                for marketing purposes.
               </p>
-            </section>
-            <section>
-              <h2 className="mb-3 text-xl font-bold text-[#0E2944]">6. Contact Us</h2>
-              <p className="text-lg text-[#334155] leading-relaxed">
-                If you have any questions about this Privacy Policy, please contact
-                us at [EMAIL] or call +92 318 665 2528.
+            </Section>
+
+            <Section title="Your rights">
+              <p>
+                You may request access to the information we hold about you, ask
+                for corrections, or request that we delete information that is
+                no longer required — by sending a message to the consultant on
+                WhatsApp or by email. We will respond within a reasonable
+                timeframe.
               </p>
-            </section>
+            </Section>
+
+            <Section title="This website">
+              <p>
+                This website does not use cookies for tracking, advertising, or
+                analytics. The site is a frontend-only publication; no
+                information you enter into the inquiry form is sent to a server.
+                On submit, the form opens a pre-filled WhatsApp message in your
+                own WhatsApp app — your information stays on your device until
+                you choose to send it.
+              </p>
+            </Section>
+
+            <Section title="Changes to this policy">
+              <p>
+                We may update this policy from time to time. The date above
+                reflects when the policy was last updated. Continued use of the
+                consultancy&apos;s services after a change indicates acceptance
+                of the updated policy.
+              </p>
+            </Section>
+
+            <Section title="Contact">
+              <p>
+                If you have any questions about this policy, please message the
+                consultant on WhatsApp or send an email — both channels are
+                listed on the contact page and in the website footer.
+              </p>
+            </Section>
           </div>
-        </div>
-      </main>
-      <Footer />
-    </>
+        </Container>
+      </section>
+
+      <CTASection />
+    </SiteShell>
+  );
+}
+
+function Section({ title, children }: { title: string; children: React.ReactNode }) {
+  return (
+    <section className="flex flex-col gap-3">
+      <h2 className="text-base sm:text-lg font-semibold text-foreground">{title}</h2>
+      {children}
+    </section>
   );
 }
