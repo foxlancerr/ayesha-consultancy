@@ -97,6 +97,7 @@ export function Footer() {
           <nav aria-label="Legal" className="flex flex-wrap items-center gap-x-4 gap-y-1">
             {siteConfig.legalNav.map((item) => (
               <Link
+              target={item.label == "About Developer" ? '_blank' : "_self"}
                 key={item.href}
                 href={item.href}
                 className="text-xs text-primary-foreground/70 hover:text-primary-foreground transition-colors"
