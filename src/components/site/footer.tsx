@@ -6,11 +6,6 @@ import { BrandMark } from "./header";
 import { siteConfig } from "@/lib/site";
 import { buildPhoneHref, buildMailtoHref } from "@/lib/whatsapp";
 
-/**
- * Footer — site-wide footer with brand summary, contact channels, office
- * locations, navigation, and legal links. Sticks to the bottom of the
- * viewport on short pages.
- */
 export function Footer() {
   const year = new Date().getFullYear();
 
