@@ -1,58 +1,51 @@
-import { SectionHeader } from "@/components/sections/section-header";
-import { ContactCard } from "@/components/common/CTASection";
-import { InquiryForm } from "@/components/common/InquiryForm";
-import { CTASection } from "@/components/common/CTASection";
-import { WhatsAppCTA } from "@/components/layout/whatsapp-cta";
-import { Header } from "@/components/layout/header";
-import { Footer } from "@/components/layout/footer";
+import type { Metadata } from "next";
+import { SiteShell } from "@/components/site/site-shell";
+import { Container } from "@/components/site/container";
+import { SectionHeader } from "@/components/site/section-header";
+import { ContactCard } from "@/components/site/contact-card";
+import { InquiryForm } from "@/components/site/inquiry-form";
 
-export default function ContactPage() {
+export const metadata: Metadata = {
+  title: "Contact — WhatsApp, Phone, Email & Inquiry Form",
+  description:
+    "Reach the consultancy by WhatsApp, phone, or email, or use the inquiry form. In-person consultations available in Islamabad and Peshawar; remote consultations across Pakistan.",
+  alternates: { canonical: "/contact" },
+  openGraph: {
+    title: "Contact the Tax Consultant",
+    description:
+      "Reach out by WhatsApp, phone, email, or the inquiry form. Islamabad, Peshawar, and remote across Pakistan.",
+    url: "/contact",
+  },
+};
+
+export default function ContactRoute() {
   return (
-    <>
-      <Header />
-      <main>
-        <section className="bg-[#0E2944] py-32 text-white">
-          <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
-            <div className="mx-auto max-w-2xl text-center">
-              <h1 className="mb-5 text-4xl font-bold tracking-tight md:text-5xl">Get in Touch</h1>
-              <p className="text-xl text-white/75">Ready to discuss your tax needs? Reach out — we're here to help.</p>
-            </div>
-          </div>
-        </section>
-        <section className="bg-white py-24">
-          <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-              {[
-                { title: "WhatsApp", icon: "💬", color: "bg-[#F1F5F9] text-[#0E2944]", details: [{ label: "Number", value: "+92 318 665 2528" }, { label: "Response", value: "Within 24 hours" }] },
-                { title: "Phone", icon: "📞", color: "bg-[#EFF6FF] text-[#1D4ED8]", details: [{ label: "Number", value: "+92 318 665 2528" }, { label: "Hours", value: "9 AM – 6 PM (PKT)" }] },
-                { title: "Email", icon: "✉️", color: "bg-[#F0FDF4] text-[#15803D]", details: [{ label: "Address", value: "[EMAIL]" }, { label: "Response", value: "Within 48 hours" }] },
-                { title: "Offices", icon: "📍", color: "bg-[#F1F5F9] text-[#0E2944]", details: [{ label: "Islamabad", value: "[ADDRESS]" }, { label: "Peshawar", value: "[ADDRESS]" }] },
-              ].map((item, i) => (
-                <ContactCard key={i} title={item.title} icon={item.icon} details={item.details} />
-              ))}
-            </div>
-          </div>
-        </section>
-        <section className="bg-[#F8FAFC] py-24">
-          <div className="mx-auto max-w-3xl px-4 md:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="mb-5 text-4xl font-bold tracking-tight text-[#0E2944] md:text-5xl">Send Us a Message</h2>
-              <p className="text-xl text-[#334155]">Fill out the form below and we'll respond promptly via WhatsApp.</p>
-            </div>
-            <div className="rounded-xl border border-[#E2E8F0] bg-white p-8 shadow-sm">
+    <SiteShell>
+      <section aria-labelledby="contact-title" className="section-padding">
+        <Container className="flex flex-col gap-10">
+          <SectionHeader
+            eyebrow="Contact"
+            as="h1"
+            title="Get in touch — the consultant replies personally."
+            description="Every message is read by the consultant. For the fastest response, send a WhatsApp message with a short description of your situation. In-person consultations available in Islamabad and Peshawar; remote consultations across Pakistan."
+          />
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-start">
+            <ContactCard />
+
+            <div className="flex flex-col gap-3">
+              <h2 className="text-base font-semibold text-foreground">
+                Inquiry form
+              </h2>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Fill in the fields below. On submit, a pre-filled WhatsApp
+                message opens — no information is sent to a server.
+              </p>
               <InquiryForm />
             </div>
           </div>
-        </section>
-        <CTASection
-          title="Ready to Get Started?"
-          subtitle="Don't let tax stress hold you back. Contact us today for professional, reliable tax consultancy services."
-          ctaLabel="Chat on WhatsApp"
-          ctaMessage="Hello, I would like to book a tax consultation."
-        />
-      </main>
-      <Footer />
-      <WhatsAppCTA />
-    </>
+        </Container>
+      </section>
+    </SiteShell>
   );
 }
