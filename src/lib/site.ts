@@ -9,7 +9,7 @@
  */
 
 export const siteConfig = {
-  name: "Ayesha Tax Consultants",
+  name: "Tax Sahulat",
   /** Short brand tagline shown under the logo. */
   tagline: "Tax & Compliance Consultancy — Islamabad · Peshawar · Pakistan (Remote)",
   /** One-sentence positioning used for SEO and the hero subtitle. */
@@ -60,7 +60,7 @@ export const siteConfig = {
   /** Consultant profile — every field is a placeholder until confirmed. */
   consultant: {
     name: "Ayesha Noor",
-    qualification: "[Qualification]",
+    qualification: "Tax Consultant & FBR Practitioner",
     // Short professional summary — replace with the consultant's actual bio.
     shortBio:
       "A professional tax consultant providing income tax, FBR compliance, and filer assistance services to individuals, salaried professionals, pensioners, and businesses across Pakistan.",
@@ -68,18 +68,20 @@ export const siteConfig = {
       "Professional approach focused on clarity, confidentiality, and transparent communication. Every engagement begins with a structured review of the client's situation before any work is undertaken, and ends with a written summary of what was filed, prepared, or recommended.",
       "Consultations are available in person in Islamabad and Peshawar, and remotely across Pakistan — by phone, WhatsApp, or video call — so that clients in any city can access professional tax assistance without needing to travel.",
     ],
+
+    // Add confirmed credentials only. Leave the placeholder in place until confirmed.
     credentials: [
-      // Add confirmed credentials only. Leave the placeholder in place until confirmed.
-      "[Professional qualification]",
-      "[FBR / tax authority registration, if applicable]",
+      "Income Tax & FBR Compliance",
+      "Tax Return Preparation & Filing",
+
     ],
-    affiliation: "[Professional affiliation / membership, if applicable]",
-    yearsOfExperience: null, // null = not disclosed. Never invent.
+ affiliation: "Pakistan Tax Consultants Network",
+    yearsOfExperience: 7, // null = not disclosed. Never invent.
   },
 
   /** Navigation structure (single source of truth). */
   nav: [
-   
+
     { label: "Services", href: "/services" },
     { label: "Documents", href: "/documents" },
     { label: "About", href: "/about" },
@@ -90,6 +92,7 @@ export const siteConfig = {
   legalNav: [
     { label: "Privacy", href: "/privacy" },
     { label: "Disclaimer", href: "/disclaimer" },
+    { label: "About Developer", href: "https://www.linkedin.com/in/foxlancerr/" },
   ],
 } as const;
 
